@@ -63,7 +63,11 @@
   margin: 0;
   padding: 0;
 }
-html, body {
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
@@ -315,7 +319,7 @@ section {
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 900;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -1713,8 +1717,6 @@ footer { background: var(--charcoal); color: rgba(255, 255, 255, 0.65); padding:
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .brands-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
-  .faq-wrap { grid-template-columns: 1fr; }
-  .faq-sidebar { position: static; margin-bottom: 30px; }
   /* Testimonials: 2 cols on smaller laptops */
   .test-grid { grid-template-columns: 1fr 1fr; }
   /* Trust strip: stays 3 cols */
@@ -1729,6 +1731,9 @@ footer { background: var(--charcoal); color: rgba(255, 255, 255, 0.65); padding:
   .hero-visual { order: 2; margin-top: 0; padding: 0 !important; }
   .hero-content { order: 1; }
   .hero-rings { right: auto; left: 50%; transform: translate(-50%, -50%); width: 500px; height: 500px; }
+  /* FAQ: stack on 960px and below */
+  .faq-wrap { grid-template-columns: 1fr; }
+  .faq-sidebar { position: static; margin-bottom: 30px; }
   /* Pain: keep 2x2 */
   /* Trust strip: drop to 3 cols but allow wrap at 2 */
   .trust-strip .section-inner { grid-template-columns: repeat(3, 1fr) !important; }
