@@ -1,3 +1,13 @@
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  if (preloader) {
+    preloader.style.transition = 'opacity 0.6s ease-out, visibility 0.6s';
+    preloader.style.opacity = '0';
+    preloader.style.visibility = 'hidden';
+    setTimeout(() => preloader.remove(), 600);
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================================
      MOBILE MENU
