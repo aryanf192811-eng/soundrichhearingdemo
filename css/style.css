@@ -751,14 +751,14 @@ section {
   position: relative;
   border-radius: var(--r-xl);
   overflow: hidden;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 .hero-img-wrap img {
   width: 100%;
   height: auto;
   border-radius: inherit;
   display: block;
-  object-fit: cover;
 }
 .hero-img-overlay {
   position: absolute;
